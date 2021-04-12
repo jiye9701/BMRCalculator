@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<!--Created by: Jiye Yu - Student Nr.:301116244 Created on June 12, 2020--->
+<html lang="en">
+<head>
+<meta content="en-us" http-equiv="Content-Language">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>assignment 1</title>
+<meta content="HTML table, COMP125" name="keywords">
+<meta content="Assignment1 HTML tables." name="description">
+<link href="Assignment1Styles.css" rel="stylesheet" type="text/css">
+	<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+	
+<div id ="Whole" style="width:980px; margin-left:auto; margin-right:auto;">
+<header><h2>BMR Calculator</h2>
+</header>
+
+
+
+<main>
+			<table style="width: 100%">
+				<tr>
+					<td><a href="assignment1.html">Metric BMR Calculator</a></td>
+					<td><a href="assignment1-1.html">Imperial BMR Calculator</a></td>
+				</tr>
+			</table>
+			
+<form>
+								
+
+<h4>Gender</h4>
+
+	<label for="SelectGender"></label>
+<select  name="SelectGender" id="SelectGender" required tabindex="1" style="height: 16px">
+	<option disabled selected> </option>
+<option value="M">Male</option>
+<option value="F">Female</option>
+</select>
+<br>
+
+<h4>Age</h4>
+
+<input name="numAge" id="numAge" type="number"  min="1" step="1" required="" tabindex="3">
+
+
+<h4>Your Height</h4>
+<label for="numFeet"> Feet: </label>
+<input name ="numFeet"  id="numFeet"type="number" max="8" min="0.01" step="1" required tabindex="5">&nbsp;
+	<label for="numInches"> Inches: </label>
+<input name ="numInches"  id="numInches"type="number" max="14.99999999" min="0.01" step="0.01" required tabindex="7">
+								
+
+	<h4>Your Weight </h4>
+	<label for="numStones">Stones: </label>
+<input name ="numStones" id="numStones" type="number" max="49.99999999" step="0.01" min="0.01" required tabindex="9">&nbsp;
+	<label for="numPounds">Pounds:</label><input name ="numPounds" id="numPounds" type="number" max="499.99999999" step="0.01" min="0.01" required tabindex="11"><br>&nbsp;<h4>Select your Activity Level: </h4>
+<input name="radioActivityLevel" type="radio"  value="SedentaryLightAct" required tabindex="13"> Sedentary 
+									or light activity (Office worker getting 
+									little or no exercise)<br>
+<input name="radioActivityLevel"  type="radio"  value="ModAct" required tabindex="15"> Active or 
+									moderately active (Construction worker or 
+									person running one hour daily)<br>
+<input name="radioActivityLevel" type="radio"  value="VigAct" required tabindex="17"> Vigorously active (Agricultural worker (non mechanized) or person swimming two hours daily)<br><br><br>
+
+
+
+
+
+
+
+<button class ="btnCalculate"name="btnCalculate" id="btnCalculate" type="button" onclick="calculateImperial()" style="width: 130px">Calculate BMR</button>
+
+
+						
+
+
+	<br>
+
+
+						
+
+
+<h2>The results will come out: </h2>
+
+<label for="numtoTal">Total BMR: <br></label>
+
+<input class="input-numTotal" name="numTotal" id="numTotal" type="text" disabled tabindex="19"><br><br>
+
+
+
+
+
+<label for="numEnergy">Total Energy Expenditure Decision: <br> </label>
+
+<input class="input-Energy" name="numEnergy" id="numEnergy" type="text" disabled tabindex="21"><br>	
+		</form></main>
+		
+		
+		
+		
+
+							
+							
+														<footer><h6>
+	 &copy;Copyright Jiye Yu - Assignment1 - Comp125
+	
+</h6>
+	</footer>
+</div>
+
+		
+	<script src ="Assignment1.js"></script>
+</body>
+
+</html>

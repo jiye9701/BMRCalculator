@@ -1,0 +1,32 @@
+﻿body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h4 {
+	font-weight: bold;
+	color: #353535;
+}
+h2 {
+	color: #333333;
+}
+button {
+	border-width: medium;
+}
+body {
+	background-color: #BCE7D9;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h6 {
+	background-color: #44938E;
+}
+#Whole {
+	background-image: url('images/background.png');
+}
+a:link {
+	text-decoration: none;
+}
+a:active {
+	color: #FFFFFF;
+}
+a:hover {
+	text-decoration: underline overline;
+}
